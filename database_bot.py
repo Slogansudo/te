@@ -21,3 +21,7 @@ class Database:
             return 'inserted successful'
         if typ == 'select':
             return cursor.fetchall()
+        if typ == "create":
+            dbs.commit()
+            return "created successful"
+
