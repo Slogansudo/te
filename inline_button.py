@@ -1,39 +1,39 @@
 from aiogram import types
 
 keyboard = types.InlineKeyboardMarkup(row_width=2)
-button2 = types.InlineKeyboardButton(text="musics", callback_data="musics")
-button1 = types.InlineKeyboardButton(text="videos", callback_data="videos")
-button3 = types.InlineKeyboardButton(text="back", callback_data="back")
-keyboard.add(button1, button2, button3)
+menu1 = types.InlineKeyboardButton(text="musics", callback_data="musics")
+menu2 = types.InlineKeyboardButton(text="videos", callback_data="videos")
+menu3 = types.InlineKeyboardButton(text="back", callback_data="back")
+keyboard.add(menu1, menu2, menu3)
 
 
-m_button = types.InlineKeyboardButton(text="Yulduz Usmonova", callback_data="Yulduz Usmonova")
-m_button2 = types.InlineKeyboardButton(text="Jaloliddin Axmadaliyev", callback_data="Jaloliddin Axmadaliyev")
-m_button3 = types.InlineKeyboardButton(text="Baxrom Nazarov", callback_data="Baxrom Nazarov")
-m_button4 = types.InlineKeyboardButton(text="back", callback_data="back")
+music_menu = types.InlineKeyboardButton(text="Yulduz Usmonova", callback_data="Yulduz Usmonova")
+music_menu2 = types.InlineKeyboardButton(text="Jaloliddin Axmadaliyev", callback_data="Jaloliddin Axmadaliyev")
+music_menu3 = types.InlineKeyboardButton(text="Baxrom Nazarov", callback_data="Baxrom Nazarov")
+music_menu4 = types.InlineKeyboardButton(text="back", callback_data="back")
 
 # music
 musics = types.InlineKeyboardMarkup(row_width=3)
-musics.add(m_button, m_button2, m_button3, m_button4)
+musics.add(music_menu, music_menu2, music_menu3, music_menu4)
 
 
-v_button = types.InlineKeyboardButton(text='serial', callback_data='serial')
-v_button2 = types.InlineKeyboardButton(text='film', callback_data='film')
-v_button3 = types.InlineKeyboardButton(text='short video', callback_data='short data')
-v_button4 = types.InlineKeyboardButton(text='back', callback_data="back")
+video_menu = types.InlineKeyboardButton(text='serial', callback_data='serial')
+video_menu2 = types.InlineKeyboardButton(text='film', callback_data='film')
+video_menu3 = types.InlineKeyboardButton(text='short video', callback_data='short data')
+video_menu4 = types.InlineKeyboardButton(text='back', callback_data="back")
 
 # video
 videos = types.InlineKeyboardMarkup(row_width=3)
-videos.add(v_button, v_button2, v_button3, v_button4)
+videos.add(video_menu, video_menu2, video_menu3, video_menu4)
 
 
-c_button1 = types.InlineKeyboardButton(text='music category', callback_data='music category')
-c_button2 = types.InlineKeyboardButton(text='video category', callback_data='video category')
-c_button3 = types.InlineKeyboardButton(text='back', callback_data="back")
+category1 = types.InlineKeyboardButton(text='music category', callback_data='music category')
+category2 = types.InlineKeyboardButton(text='video category', callback_data='video category')
+category3 = types.InlineKeyboardButton(text='back', callback_data="back")
 
 # category
 category = types.InlineKeyboardMarkup(row_width=2)
-category.add(c_button1, c_button2, c_button3)
+category.add(category1, category2, category3)
 
 
 videos_category = types.InlineKeyboardMarkup(row_width=2)
